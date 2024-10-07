@@ -23,6 +23,13 @@ import styles from './styles.module.css'
 import { ExperiencesList } from 'config/experience'
 import { mobileBreakpointsMap } from 'config/theme'
 
+// Añade la experiencia de Kubera a la lista de experiencia
+
+// Asegúrate de que ExperiencesList contenga todas tus experiencias
+const updatedExperiencesList = [
+  ...ExperiencesList, // Añade la experiencia de Kubera
+]
+
 const ExperienceTab = () => {
   const { colorMode } = useColorMode()
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
@@ -55,7 +62,7 @@ const ExperienceTab = () => {
         overflowY={'hidden'}
         className={styles.experienceTabs}
       >
-        {ExperiencesList.map((company) => (
+        {updatedExperiencesList.map((company) => (
           <Tab
             key={`Tab-${company.name}`}
             fontSize="smaller"
@@ -85,7 +92,7 @@ const ExperienceTab = () => {
         ))}
       </TabList>
       <TabPanels>
-        {ExperiencesList.map((company) => (
+        {updatedExperiencesList.map((company) => (
           <TabPanel key={`TabPanel-${company.name}`}>
             <SlideFade offsetY="20px" in={true}>
               <Stack spacing={0}>
@@ -100,7 +107,7 @@ const ExperienceTab = () => {
                 <Text as="span">
                   <Link
                     href={company.url}
-                    aria-label="scentregroup"
+                    aria-label="kubera"
                     rel="noreferrer"
                     target="_blank"
                     fontSize="lg"

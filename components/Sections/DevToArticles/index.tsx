@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo, useEffect, useState } from 'react'
 import {
   Heading,
   Text,
@@ -10,13 +10,33 @@ import {
 } from '@chakra-ui/react'
 import { Article } from 'types/article'
 
-const DevToArticles = ({ articles }: { articles: Article[] }) => {
+const DevToArticles = () => {
   const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.100')
   const borderColor = useColorModeValue('blackAlpha.300', 'whiteAlpha.100')
   const alphaHover = useColorModeValue(
     'rgba(49, 151, 149, 0.06)',
     'rgba(157, 236, 249, 0.06)'
   )
+  const [articles, setArticles] = useState<any[]>([]); // Asegura que 'articles' esté inicializado como array vacío
+  const [loading, setLoading] = useState(true); // Estado para manejar la carga
+
+
+  // Llamada a la API para obtener los artículos
+  useEffect(() => {
+    fetch('https://dev.to/api/articles?username=drew_ilargi')
+      .then((response) => response.json())
+      .then((data) => {
+        setArticles(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error al cargar los artículos:', error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <Text>Cargando artículos...</Text>; // Muestra mensaje de carga mientras se obtienen los artículos
+
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}

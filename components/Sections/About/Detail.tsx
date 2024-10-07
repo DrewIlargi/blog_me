@@ -13,14 +13,16 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiDotNet,
+  SiRuby,
   SiJavascript,
-  SiTypescript,
-  SiGraphql,
+  SiPostgresql,
+  SiFirebase,
   SiReact,
-  SiNextDotJs,
   SiNodeDotJs,
   SiDocker,
+  SiAmazonaws,
+  SiGooglecloud,
+  SiMicrosoftazure,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -32,7 +34,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
+  const professionalYears = currentYear - 2022
 
   return (
     <Stack
@@ -48,72 +50,52 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        What i do.
+        Sobre mí.
       </Heading>
       <Text variant="description">
-        I`ve been coding professionally for {professionalYears} years now and
-        currently working as a <b>Software Engineer</b> that focuses on{' '}
-        <b>architecture</b>, <b>APIs</b>,{' '}
-        <Tooltip
-          label="Ha!. Or more accurately TECH DEBT"
-          aria-label="Tech Debt?"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis">
-            <b>nitty-gritty business logics</b>
-          </Text>
-        </Tooltip>{' '}
-        and even <b>front end integration</b> stuff now, how time flies!
+        Llevo {professionalYears} años trabajando como desarrollador profesional. Me especializo en{' '}
+        <b>desarrollo backend</b>, <b>integración de APIs</b>, y la <b>arquitectura de soluciones en la nube</b> con experiencia en plataformas como AWS, Google Cloud y Azure.
         <br /> <br />
-        Here are few technologies that are cup of my{' '}
-        <Tooltip
-          label="I only drink tea if I needed too!"
-          aria-label="I hate Tea!"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis" textDecorationLine="line-through">
-            tea
-          </Text>
-        </Tooltip>{' '}
-        coffee <Icon as={GiCoffeePot} color={emphasis} />.
+        A lo largo de mi carrera, he trabajado con diferentes empresas de tecnología en roles clave que me permitieron mejorar mis habilidades y ampliar mi experiencia.
+        <br />
+        
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotNet} color={emphasis} fontSize="2em" />
-            C# - .NET.Core
+            <ListIcon as={SiRuby} color={emphasis} fontSize="2em" />
+            Ruby (Ruby on Rails)
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
-            Javascript (ES6+)
+            JavaScript (ES6+)
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
-            Typescript
+            <ListIcon as={SiPostgresql} color={emphasis} fontSize="2em" />
+            PostgreSQL / MySQL
           </ListItem>
-
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
-            Node
+            Node.js
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Graphql
+            <ListIcon as={SiFirebase} color={emphasis} fontSize="2em" />
+            Firebase (FCM)
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
-            NextJS
-          </ListItem>
-          <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
             Docker
+          </ListItem>
+          <ListItem fontSize="small" display="flex" alignItems="center">
+            <ListIcon as={SiAmazonaws} color={emphasis} fontSize="2em" />
+            AWS / Google Cloud / Azure
           </ListItem>
         </List>
         <Box>
@@ -124,7 +106,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             textAlign="left"
             onClick={onOpen}
           >
-            See my full arsenal <Icon as={IoMdOpen} />
+            Ver todas mis habilidades <Icon as={IoMdOpen} />
           </Text>
         </Box>
       </SimpleGrid>

@@ -16,39 +16,39 @@ type SocialMedia = {
 }
 
 export const SocialMedias: SocialMedia[] = [
-  {
-    label: 'Twitter',
-    href: 'https://twitter.com/keysl1831',
-    icon: FaTwitter,
-  },
-  {
-    label: 'Instagram',
-    href: 'https://www.instagram.com/kllawingco/',
-    icon: FaInstagram,
-  },
+  // {
+  //   label: 'Twitter',
+  //   href: 'https://twitter.com/keysl1831',
+  //   icon: FaTwitter,
+  // },
+  // {
+  //   label: 'Instagram',
+  //   href: 'https://www.instagram.com/kllawingco/',
+  //   icon: FaInstagram,
+  // },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/marclawingco/',
+    href: 'https://www.linkedin.com/in/andresvalencia69/',
     icon: FaLinkedin,
   },
   {
-    label: 'StackOverflow',
-    href: 'https://stackoverflow.com/users/3867490/keysl',
-    icon: FaStackOverflow,
-  },
-  {
-    label: 'Youtube',
-    href: 'https://www.youtube.com/channel/UCV-MiUVsKJrKJKKfUK58nhg',
-    icon: FaYoutube,
-  },
-  {
     label: 'Github',
-    href: 'https://github.com/klawingco',
+    href: 'https://github.com/DrewIlargi',
     icon: FaGithub,
-  },
-  {
-    label: 'Dev.to',
-    href: 'https://dev.to/klawingco',
-    icon: FaDev,
-  },
+  }
+  // {
+  //   label: 'StackOverflow',
+  //   href: 'https://stackoverflow.com/users/3867490/keysl',
+  //   icon: FaStackOverflow,
+  // },
+  // {
+  //   label: 'Youtube',
+  //   href: 'https://www.youtube.com/channel/UCV-MiUVsKJrKJKKfUK58nhg',
+  //   icon: FaYoutube,
+  // },
+  // {
+  //   label: 'Dev.to',
+  //   href: 'https://dev.to/klawingco',
+  //   icon: FaDev,
+  // },
 ]

@@ -16,11 +16,9 @@ const DetailSection = () => (
       Places i’ve worked.
     </Heading>
     <Text variant="description">
-      Since 2016, had a privilege to work with several companies that enables me
-      to hone my skills and talents. These companies will always have a special
-      place in my heart. Currently I am working with{' '}
-      <Link href="https://www2.deloitte.com/" target="_blank" rel="noreferrer">
-        Deloitte
+      Actualmente soy el <b>Desarrollador Líder</b> en <b>Kubera</b>, donde lidero un equipo en el desarrollo de una platafoTextde gamificación y red social para empresas.{' '}
+      <Link href="https://wwww.kubera.com.co/" target="_blank" rel="noreferrer">
+        Kubera
       </Link>
       .
     </Text>

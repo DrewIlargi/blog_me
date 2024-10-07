@@ -70,7 +70,7 @@ const Sidebar = () => {
             textTransform="uppercase"
             variants={fadeInUp}
           >
-            Marc Jhon
+            Andres
           </MotionHeading>
           <MotionHeading
             as="h2"
@@ -82,7 +82,7 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Lawingco.
+            Valencia.
           </MotionHeading>
           <MotionText
             colorScheme="gray"
@@ -90,7 +90,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me KL. That works too . . .
+            Or you could call me Drew. That works too . . .
           </MotionText>
 
           <MotionHeading
@@ -100,7 +100,7 @@ const Sidebar = () => {
             className={styles.marginTopSmall}
             variants={fadeInUp}
           >
-            Software Engineer
+            Software Developer
           </MotionHeading>
 
           <MotionText
@@ -115,8 +115,6 @@ const Sidebar = () => {
               {' '}
               Thank you!
             </Text>
-            <br />I am software engineer that specializes at backend apis, front
-            end integration, recently found myself studying UX too.
           </MotionText>
           <MotionButton
             size="lg"
@@ -128,7 +126,7 @@ const Sidebar = () => {
             width="120px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:marcjhon18@gmail.com"
+            href="mailto:ipodlayer@gmail.com"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
