@@ -17,25 +17,26 @@ const DevToArticles = () => {
     'rgba(49, 151, 149, 0.06)',
     'rgba(157, 236, 249, 0.06)'
   )
-  const [articles, setArticles] = useState<any[]>([]); // Asegura que 'articles' esté inicializado como array vacío
-  const [loading, setLoading] = useState(true); // Estado para manejar la carga
-
+  const [articles, setArticles] = useState<any[]>([]) // Asegura que 'articles' esté inicializado como array vacío
+  const [loading, setLoading] = useState(true) // Estado para manejar la carga
 
   // Llamada a la API para obtener los artículos
   useEffect(() => {
     fetch('https://dev.to/api/articles?username=drew_ilargi')
       .then((response) => response.json())
       .then((data) => {
-        setArticles(data);
-        setLoading(false);
+        setArticles(data)
+        setLoading(false)
       })
       .catch((error) => {
-        console.error('Error al cargar los artículos:', error);
-        setLoading(false);
-      });
-  }, []);
+        console.error('Error al cargar los artículos:', error)
+        setLoading(false)
+      })
+  }, [])
 
-  if (loading) return <Text>Cargando artículos...</Text>; // Muestra mensaje de carga mientras se obtienen los artículos
+  if (loading) {
+    return <Text>Cargando artículos...</Text>
+  } // Muestra mensaje de carga mientras se obtienen los artículos
 
   return (
     <Stack

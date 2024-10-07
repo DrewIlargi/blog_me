@@ -76,21 +76,11 @@ export const Experiences: {
       dark: '/logo2.png',
     },
     roles: [
-      <>
-        Desarrollo de backend en Ruby on Rails.
-      </>,
-      <>
-        Integración de API con Firebase y servicios en la nube.
-      </>,
-      <>
-        Manejo de bases de datos PostgreSQL.
-      </>,
-      <>
-        Implementaciones con Firebase.
-      </>,
-      <>
-        Diseño y optimización de experiencias de usuario.
-      </>,
+      <>Desarrollo de backend en Ruby on Rails.</>,
+      <>Integración de API con Firebase y servicios en la nube.</>,
+      <>Manejo de bases de datos PostgreSQL.</>,
+      <>Implementaciones con Firebase.</>,
+      <>Diseño y optimización de experiencias de usuario.</>,
     ],
   },
 }

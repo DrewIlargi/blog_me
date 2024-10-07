@@ -53,12 +53,16 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         Sobre mí.
       </Heading>
       <Text variant="description">
-        Llevo {professionalYears} años trabajando como desarrollador profesional. Me especializo en{' '}
-        <b>desarrollo backend</b>, <b>integración de APIs</b>, y la <b>arquitectura de soluciones en la nube</b> con experiencia en plataformas como AWS, Google Cloud y Azure.
+        Llevo {professionalYears} años trabajando como desarrollador
+        profesional. Me especializo en <b>desarrollo backend</b>,{' '}
+        <b>integración de APIs</b>, y la{' '}
+        <b>arquitectura de soluciones en la nube</b> con experiencia en
+        plataformas como AWS, Google Cloud y Azure.
         <br /> <br />
-        A lo largo de mi carrera, he trabajado con diferentes empresas de tecnología en roles clave que me permitieron mejorar mis habilidades y ampliar mi experiencia.
+        A lo largo de mi carrera, he trabajado con diferentes empresas de
+        tecnología en roles clave que me permitieron mejorar mis habilidades y
+        ampliar mi experiencia.
         <br />
-        
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>

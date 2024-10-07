@@ -35,7 +35,7 @@ export const SocialMedias: SocialMedia[] = [
     label: 'Github',
     href: 'https://github.com/DrewIlargi',
     icon: FaGithub,
-  }
+  },
   // {
   //   label: 'StackOverflow',
   //   href: 'https://stackoverflow.com/users/3867490/keysl',

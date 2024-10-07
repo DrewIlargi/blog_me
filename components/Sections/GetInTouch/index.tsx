@@ -39,7 +39,11 @@ const rimuruVariant: Variants = {
 const ContactForm = () => {
   const [ref, inView] = useInView()
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
-  const [errors, setErrors] = useState({ name: false, email: false, message: false })
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false,
+    message: false,
+  })
   const toast = useToast()
 
   // Maneja los cambios en los campos del formulario
@@ -63,7 +67,9 @@ const ContactForm = () => {
   // Maneja el envío del formulario
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (!validateForm()) return
+    if (!validateForm()) {
+      return
+    }
 
     // Lógica de envío (placeholder)
     console.log('Formulario enviado:', formData)
@@ -158,7 +164,9 @@ const ContactForm = () => {
               focusBorderColor="teal.400"
             />
             {errors.message && (
-              <FormErrorMessage>El mensaje no puede estar vacío.</FormErrorMessage>
+              <FormErrorMessage>
+                El mensaje no puede estar vacío.
+              </FormErrorMessage>
             )}
           </FormControl>
 

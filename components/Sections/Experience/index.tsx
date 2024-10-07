@@ -16,7 +16,9 @@ const DetailSection = () => (
       Places i’ve worked.
     </Heading>
     <Text variant="description">
-      Actualmente soy el <b>Desarrollador Líder</b> en <b>Kubera</b>, donde lidero un equipo en el desarrollo de una platafoTextde gamificación y red social para empresas.{' '}
+      Actualmente soy el <b>Desarrollador Líder</b> en <b>Kubera</b>, donde
+      lidero un equipo en el desarrollo de una platafoTextde gamificación y red
+      social para empresas.{' '}
       <Link href="https://wwww.kubera.com.co/" target="_blank" rel="noreferrer">
         Kubera
       </Link>
