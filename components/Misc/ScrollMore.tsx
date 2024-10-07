@@ -65,7 +65,7 @@ const ScrollMore = () => {
       right="3%"
       display={isMobile ? 'none' : 'block'}
     >
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {[ScrollDirection.Initial, ScrollDirection.Up].includes(
           scrollDirection
         ) && (
@@ -84,7 +84,7 @@ const ScrollMore = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {scrollDirection === ScrollDirection.Down && (
           <motion.div
             initial="hidden"

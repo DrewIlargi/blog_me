@@ -98,17 +98,6 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             AWS / Google Cloud / Azure
           </ListItem>
         </List>
-        <Box>
-          <Text
-            as="button"
-            variant="emphasis"
-            fontSize="smaller"
-            textAlign="left"
-            onClick={onOpen}
-          >
-            Ver todas mis habilidades <Icon as={IoMdOpen} />
-          </Text>
-        </Box>
       </SimpleGrid>
     </Stack>
   )

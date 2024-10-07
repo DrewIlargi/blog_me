@@ -22,7 +22,7 @@ declare global {
 }
 
 const Avatar = () => {
-  const MotionBox = motion(Box)
+  const MotionBox = motion.create(Box)
   const imgAvatar = useColorModeValue(
     AvatarImages.LightMode,
     AvatarImages.DarkMode
@@ -38,7 +38,7 @@ const Avatar = () => {
     window.preloadedPictures = preloadedImages
   }, [])
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       <MotionBox
         id="klAvatar"
         boxSize={{ base: 64, lg: 'sm' }}

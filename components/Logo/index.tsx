@@ -9,19 +9,19 @@ import { simpleOpacity } from 'config/animations'
 const Logo = () => {
   const { colorMode } = useColorMode()
   const [isLogoLoaded, setLogoLoaded] = useState(false)
-  const MotionImage = motion(Image)
+  const MotionImage = motion.create(Image)
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       <Link href="/" passHref>
         {colorMode === ThemeMode.Dark ? (
           <MotionImage
             className={!isMobile ? styles.logo : ''}
             boxSize={isMobile ? '30px' : '50px'}
             objectFit="cover"
-            src="./logo.png"
+            src="./logo_drew.png"
             alt="KL Lawingco Logo"
-            fallbackSrc="./logo.png"
+            fallbackSrc="./logo_drew.png"
             variants={simpleOpacity}
             initial="initial"
             animate={isLogoLoaded && 'animate'}
@@ -33,8 +33,8 @@ const Logo = () => {
             className={!isMobile ? styles.logo : ''}
             boxSize={isMobile ? '30px' : '50px'}
             objectFit="cover"
-            src="./logo_light.png"
-            fallbackSrc="./logo_light.png"
+            src="./logo_drew.png"
+            fallbackSrc="./logo_drew.png"
             alt="KL Lawingco Logo"
             variants={simpleOpacity}
             initial="initial"

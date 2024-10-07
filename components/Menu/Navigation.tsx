@@ -19,7 +19,7 @@ import useScrollDirection, { ScrollDirection } from 'hooks/useScrollDirection'
 
 const Navigation = () => {
   const { toggleColorMode, colorMode } = useColorMode()
-  const MotionContainer = motion(Container)
+  const MotionContainer = motion.create(Container)
   const [isOpen, toggleOpen] = useCycle(false, true)
   const isMobile = useBreakpointValue(mobileBreakpointsMap)
   const menuButtonSize = useBreakpointValue({
@@ -157,7 +157,7 @@ const Navigation = () => {
               Experience
             </Button>
           </Box>
-          <Box
+          {/* <Box
             width={{ base: '100%', lg: 'auto' }}
             textAlign={{ base: 'center', lg: 'left' }}
             marginY={{ base: 2, lg: 0 }}
@@ -177,7 +177,7 @@ const Navigation = () => {
             >
               Works
             </Button>
-          </Box>
+          </Box> */}
           <Box
             width={{ base: '100%', lg: 'auto' }}
             textAlign={{ base: 'center', lg: 'left' }}
